@@ -916,6 +916,14 @@ Adding a filter to the request means only events that meet the filter criteria a
 
   Allowed for administrator and user accounts
 
+***********************
+
+``Get Data Joins Values``
+--------------------
+
+Get Data Joins Values returns multiiple data streams specified in your API call. 
+
+Consider we have two streams with ids, Simple1 and Simple2.
 
 ***********************
 
