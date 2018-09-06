@@ -969,6 +969,23 @@ And assume that Simple2 presents the following data:
   ] 
 
 
+**GET Requests**
+The following are responses for various Joins request options:
+
+**InnerJoin Request**
+
+::
+
+  GET /api/Tenants/{tenantId}/Namespaces/{namespaceId}/Data/
+      GetWindowValues?streams=Simple1,Simple2&joinMode=inner
+      &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
+
+  GET api/Tenants/{tenantId}/Namespaces/{namespaceId}/Streams/{streamId}/Data/GetWindowValues 
+      ?startIndex={startIndex}&startBoundaryType={startBoundaryType} 
+      &endIndex={endIndex}&endBoundaryType={endBoundaryType}&filter={filter}&count={count} 
+      &viewId={viewId}
+
+  
 
 
 ***********************
