@@ -940,7 +940,7 @@ To join multiple streams, for example Simple1 and Simple2, assume that Simple 1 
         "Time":"2017-11-23T14:00:00Z",
         "Measurement":30.0
      },
-     {  "Time":"2017-11-23T16:00:002",
+     {  "Time":"2017-11-23T16:00:00Z",
         "Measurement":40.0
      }
   ] 
@@ -963,7 +963,7 @@ And assume that Simple2 presents the following data:
         "Time":"2017-11-23T15:00:00Z",
         "Measurement":70.0
      },
-     {  "Time":"2017-11-23T17:00:002",
+     {  "Time":"2017-11-23T17:00:00Z",
         "Measurement":80.0
      }
   ] 
@@ -980,10 +980,31 @@ The following are responses for various Joins request options:
       GetWindowValues?streams=Simple1,Simple2&joinMode=inner
       &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
 
-  GET api/Tenants/{tenantId}/Namespaces/{namespaceId}/Streams/{streamId}/Data/GetWindowValues 
-      ?startIndex={startIndex}&startBoundaryType={startBoundaryType} 
-      &endIndex={endIndex}&endBoundaryType={endBoundaryType}&filter={filter}&count={count} 
-      &viewId={viewId}
+**Response body**
+
+::
+  
+  Content-Type: application/json
+
+  [  
+    [
+      {  
+        "Time":"2017-11-23T14:00:00Z",
+        "Measurement":10.0
+     },
+     {  
+        "Time":"2017-11-23T14:00:00Z",
+        "Measurement":60.0
+     },
+     {  
+        "Time":"2017-11-23T15:00:00Z",
+        "Measurement":30.0
+      }
+    ]
+  ] 
+
+
+Measurements from both streams with common indexes.
 
   
 
