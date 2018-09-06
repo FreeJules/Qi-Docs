@@ -923,7 +923,28 @@ Adding a filter to the request means only events that meet the filter criteria a
 
 Get Data Joins Values returns multiiple data streams specified in your API call. 
 
-Consider we have two streams with ids, Simple1 and Simple2.
+To join multiple streams, for example Simple1 and Simple2, assume that Simple 1 presents the following data:
+
+::
+[
+   {
+      "Time":"2017-11-23T11:00:00Z",
+      "Measurement":10.0
+   },
+   {
+      "Time":"2017-11-23T13:00:00Z",
+      "Measurement":20.0
+   },
+   {
+      "Time":"2017-11-23T14:00:00Z",
+      "Measurement":30.0
+   },
+   {
+      "Time":"2017-11-23T16:00:00Z",
+      "Measurement":40.0
+   }
+]
+
 
 ***********************
 
