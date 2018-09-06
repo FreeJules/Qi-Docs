@@ -975,6 +975,28 @@ And assume that Simple2 presents the following data:
 
 
 
+::
+  
+  Content-Type: application/json
+
+  [  
+     {  
+        "Time":"2017-11-23T13:00:00Z",
+        "Measurement":10.0
+     },
+     {  
+        "Time":"2017-11-23T14:00:00Z",
+        "Measurement":20.0
+     },
+     {  
+        "Time":"2017-11-23T15:00:00Z",
+        "Measurement":30.0
+     }
+  ] 
+
+
+
+
 ***********************
 
 ``Get Window Values``
