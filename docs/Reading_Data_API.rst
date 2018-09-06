@@ -977,8 +977,6 @@ And assume that Simple2 presents the following data:
 
 ::
   
-  Content-Type: application/json
-
   [  
      {  
         "Time":"2017-11-23T12:00:00Z",
