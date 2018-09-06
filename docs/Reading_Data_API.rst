@@ -1019,7 +1019,7 @@ Measurements from both streams with common indexes.
 
 ::
   
-  Content-Type: application/json
+  
 
   [
     [
@@ -1072,6 +1072,13 @@ Measurements from both streams with common indexes.
         {
             "Time": "2017-11-23T17:00:00Z",
             "Measurement": 80
+            
+            
+            
+            
+            
+            
+            
         }
     ]
 ]
