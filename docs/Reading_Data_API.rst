@@ -973,7 +973,7 @@ And assume that Simple2 presents the following data:
 
 ...
 
-
+And assume that Simple2 presents the following data:
 
 ::
   
@@ -981,16 +981,19 @@ And assume that Simple2 presents the following data:
 
   [  
      {  
-        "Time":"2017-11-23T13:00:00Z",
-        "Measurement":10.0
+        "Time":"2017-11-23T12:00:00Z",
+        "Measurement":50.0
      },
      {  
         "Time":"2017-11-23T14:00:00Z",
-        "Measurement":20.0
+        "Measurement":60.0
      },
      {  
         "Time":"2017-11-23T15:00:00Z",
-        "Measurement":30.0
+        "Measurement":70.0
+     },
+     {  "Time":"2017-11-23T17:00:002",
+        "Measurement":80.0
      }
   ] 
 
