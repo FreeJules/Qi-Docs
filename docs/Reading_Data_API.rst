@@ -947,6 +947,30 @@ To join multiple streams, for example Simple1 and Simple2, assume that Simple 1 
 ]
 
 
+And assume that Simple2 presents the following data:
+
+::
+
+[
+   {
+      "Time":"2017-11-23T12:00:00Z",
+      "Measurement":50.0
+   },
+   {
+      "Time":"2017-11-23T14:00:00Z",
+      "Measurement":60.0
+   },
+   {
+      "Time":"2017-11-23T15:00:00Z",
+      "Measurement":70.0
+   },
+   {
+      "Time":"2017-11-23T17:00:00Z",
+      "Measurement":80.0
+   }
+]
+
+
 
 
 
