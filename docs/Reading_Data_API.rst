@@ -1025,16 +1025,54 @@ Measurements from both streams with common indexes.
   [  
     [
       {  
-        "Time":"2017-11-23T14:00:00Z",
-        "Measurement":10.0
+            "Time": "2017-11-23T11:00:00Z",
+            "Measurement": 10
+        },
+        null
+    ],
+    [
+        null,
+        {
+            "Time": "2017-11-23T12:00:00Z",
+            "Measurement": 50
+        }
+    ],
+    [
+        {
+            "Time": "2017-11-23T13:00:00Z",
+            "Measurement": 20
+        },
+        null
+    ],
+    [
+        {
+            "Time": "2017-11-23T14:00:00Z",
+            "Measurement": 30
+        },
+        {
+            "Time": "2017-11-23T14:00:00Z",
+            "Measurement": 60
+        }
+    ],
+    [
+        null,
+        {
+            "Time": "2017-11-23T15:00:00Z",
+            "Measurement": 70
      },
+   ],
+   [
      {  
-        "Time":"2017-11-23T14:00:00Z",
-        "Measurement":60.0
+            "Time":"2017-11-23T16:00:00Z",
+            "Measurement":40.0
      },
+        null
+   ],
      {  
-        "Time":"2017-11-23T15:00:00Z",
-        "Measurement":30.0
+        null,
+        {
+            "Time":"2017-11-23T17:00:00Z",
+            "Measurement":80.0
       }
     ]
   ] 
