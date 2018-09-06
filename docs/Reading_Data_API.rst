@@ -1074,7 +1074,8 @@ Measurements from both streams with common indexes.
             "Measurement": 80
         }
     ]
-] 
+]
+ 
 
 
 All Measurements from both Streams, with default values at indexes where a Stream does not have a value.
