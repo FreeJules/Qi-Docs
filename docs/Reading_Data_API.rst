@@ -1083,7 +1083,79 @@ Measurements from both streams with common indexes.
 
 All Measurements from both Streams, with default values at indexes where a Stream does not have a value.
 
+**InterpolatedJoin Request**
+
+::
+
+  GET /api/Tenants/{tenantId}/Namespaces/{namespaceId}/Data/
+      GetWindowValues?streams=Simple1,Simple2&joinMode=interpolated
+      &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
+
+**Response body**
+
+
+::
   
+  
+
+  [  
+    [
+      {  
+            "Time": "2017-11-23T11:00:00Z",
+            "Measurement": 10
+        },
+        null
+    ],
+    [
+        null,
+        {
+            "Time": "2017-11-23T12:00:00Z",
+            "Measurement": 50
+        }
+    ],
+    [
+        {
+            "Time": "2017-11-23T13:00:00Z",
+            "Measurement": 20
+        },
+        null
+    ],
+    [
+        {
+            "Time": "2017-11-23T14:00:00Z",
+            "Measurement": 30
+        },
+        {
+            "Time": "2017-11-23T14:00:00Z",
+            "Measurement": 60
+        }
+    ],
+    [
+        null,
+        {
+            "Time": "2017-11-23T15:00:00Z",
+            "Measurement": 70
+     },
+   ],
+   [
+     {  
+            "Time":"2017-11-23T16:00:00Z",
+            "Measurement":40.0
+     },
+        null
+   ],
+     {  
+        null,
+        {
+            "Time":"2017-11-23T17:00:00Z",
+            "Measurement":80.0
+      }
+    ]
+  ] 
+
+
+
+
 
 ***********************
 
