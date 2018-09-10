@@ -1426,12 +1426,7 @@ Notice that not all the values from Streams were included since they are restric
   Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
       string startIndex, SdsBoundaryType startBoundaryType, string endIndex, 
       SdsBoundaryType endBoundaryType, string filter, int count);
-        
-
-        
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T, T1, T2>(string 
-      streamId, Tuple<T1, T2> startIndex, Tuple<T1, T2> endIndex, int count, 
-      string filter, string viewId = null);
+ 
 
 
 
