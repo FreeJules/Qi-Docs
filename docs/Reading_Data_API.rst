@@ -1155,7 +1155,7 @@ All Measurements from both Streams, with default values at indexes where a Strea
 
 
 
-
+All Measurements from both Streams with missing values interpolated. If the missing values are between valid Measurements within a Stream, they are interpolated. If the missing values are outside of the boundary values, they are extrapolated.
 
 ***********************
 
