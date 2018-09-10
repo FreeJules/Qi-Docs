@@ -982,6 +982,38 @@ The following are responses for various Joins request options:
       GetWindowValues?streams=Simple1,Simple2&joinMode=inner
       &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
 
+
+
+
+**Parameters**
+
+``string tenantId``
+  The tenant identifier
+``string namespaceId``
+  The namespace identifier
+``string streamId``
+  The stream identifier
+``string startIndex``
+  Index bounding the beginning of the series of events to return
+``string endIndex``
+  Index bounding the end of the series of events to return
+``string count``
+  Optional maximum number of events to return
+``QiBoundaryType boundaryType``
+  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
+``QiBoundaryType startBoundaryType``
+  Optional QiBoundaryType specifies the first value in the result in relation to the start index
+``QiBoundaryType endBoundaryType``
+  Optional QiBoundaryType specifies the last value in the result in relation to the end index
+``string filter``
+  Optional filter expression
+``string viewId``
+  Optional view identifier
+
+
+
+
+
 **Response body**
 
 ::
