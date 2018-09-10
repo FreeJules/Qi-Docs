@@ -970,6 +970,7 @@ And assume that Simple2 presents the following data:
 
 
 **GET Requests**
+
 The following are responses for various Joins request options:
 
 
@@ -1287,6 +1288,7 @@ This is similar to OuterJoin, but value at each index is the first available val
 
 
 **POST Requests**
+
 For POST requests, the response formats are similar to GET requests, but the request format is different. Except the joinMode, all other options are specified in the body.
 
 
