@@ -1373,6 +1373,43 @@ For POST requests, the response formats are similar to GET requests, but the req
 
 Notice that not all the values from Streams were included since they are restricted by individual queries for each Stream.
 
+
+
+**.NET Library**
+
+::
+
+  Task<IEnumerable<IList<T>>> GetJoinValuesAsync<T>(IEnumerable<string> streams, SdsJoinType joinMode, 
+      string startIndex, SdsBoundaryType startBoundaryType, string endIndex, SdsBoundaryType endBoundaryType, 
+      string filter, int count);
+      
+  Task<IEnumerable<IList<T>>> GetJoinValuesAsync<T>(SdsJoinType joinMode, 
+      IList<SdsStreamQuery> sdsStreamsQueryOptions);
+
+  Task<IList<T>> GetMergeValuesAsync<T>(SdsMergeType joinMode, IList<SdsStreamQuery> sdsStreamsQueryOptions);
+  
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, string endIndex);
+      
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, string endIndex, int count);
+      
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, string endIndex, SdsBoundaryType boundaryType, string filter);
+      
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, string endIndex, SdsBoundaryType boundaryType, string filter, int count);
+      
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, SdsBoundaryType startBoundaryType, string endIndex, 
+      SdsBoundaryType endBoundaryType, string filter);
+      
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, SdsBoundaryType startBoundaryType, string endIndex, SdsBoundaryType endBoundaryType, 
+      string filter, int count);
+
+
+
 ***********************
 
 ``Get Window Values``
