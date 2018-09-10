@@ -1104,10 +1104,16 @@ All Measurements from both Streams, with default values at indexes where a Strea
             "Time": "2017-11-23T11:00:00Z",
             "Measurement": 10
         },
-        null
+        {
+            "Time": "2017-11-23T11:00:00Z",
+            "Measurement": 50
+        }
     ],
     [
-        null,
+        {
+            "Time": "2017-11-23T12:00:00Z",
+            "Measurement": 15
+        },
         {
             "Time": "2017-11-23T12:00:00Z",
             "Measurement": 50
@@ -1118,7 +1124,10 @@ All Measurements from both Streams, with default values at indexes where a Strea
             "Time": "2017-11-23T13:00:00Z",
             "Measurement": 20
         },
-        null
+        {
+            "Time": "2017-11-23T13:00:00Z",
+            "Measurement": 55
+        }
     ],
     [
         {
@@ -1131,24 +1140,33 @@ All Measurements from both Streams, with default values at indexes where a Strea
         }
     ],
     [
-        null,
+        {
+            "Time": "2017-11-23T15:00:00Z",
+            "Measurement": 35
+        },
         {
             "Time": "2017-11-23T15:00:00Z",
             "Measurement": 70
-     },
-   ],
-   [
-     {  
-            "Time":"2017-11-23T16:00:00Z",
-            "Measurement":40.0
-     },
-        null
-   ],
-     {  
-        null,
+        }
+    ],
+    [
         {
-            "Time":"2017-11-23T17:00:00Z",
-            "Measurement":80.0
+            "Time": "2017-11-23T16:00:00Z",
+            "Measurement": 40
+        },
+        {
+            "Time": "2017-11-23T16:00:00Z",
+            "Measurement": 75
+        }
+    ],
+    [
+        {
+            "Time": "2017-11-23T17:00:00Z",
+            "Measurement": 40
+        },
+        {
+            "Time": "2017-11-23T17:00:00Z",
+            "Measurement": 80
       }
     ]
   ] 
