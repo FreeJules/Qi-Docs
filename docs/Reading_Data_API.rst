@@ -1386,60 +1386,48 @@ Notice that not all the values from Streams were included since they are restric
       SdsJoinType joinMode, string startIndex, string endIndex, int count);
         
   Task<IEnumerable<IList<T>>> GetJoinValuesAsync<T>(IEnumerable<string> streams, 
-      SdsJoinType joinMode, string startIndex, string endIndex, SdsBoundaryType boundaryType, string filter);
+      SdsJoinType joinMode, string startIndex, string endIndex, SdsBoundaryType boundaryType, 
+      string filter);
 
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T>(string streamId, 
-      string startIndex, string endIndex, int count, string filter, 
-      string viewId = null);
+  Task<IEnumerable<IList<T>>> GetJoinValuesAsync<T>(IEnumerable<string> streams, 
+      SdsJoinType joinMode, string startIndex, string endIndex, SdsBoundaryType boundaryType, 
+      string filter, int count);
         
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T, T1>(string streamId, 
-      T1 startIndex, T1 endIndex, int count, string filter, 
-      string viewId = null);
+  Task<IEnumerable<IList<T>>> GetJoinValuesAsync<T>(IEnumerable<string> streams, 
+      SdsJoinType joinMode, string startIndex, SdsBoundaryType startBoundaryType, string endIndex, 
+      SdsBoundaryType endBoundaryType, string filter);
         
-  Task<IEnumerable<QiInterval<T>>> GetIntervalsAsync<T, T1>(string streamId, T1 
-      startIndex, T1 endIndex, int count, string viewId = null);
+  Task<IEnumerable<IList<T>>> GetJoinValuesAsync<T>(IEnumerable<string> streams, 
+      SdsJoinType joinMode, string startIndex, SdsBoundaryType startBoundaryType, string endIndex, 
+      SdsBoundaryType endBoundaryType, string filter, int count);
         
-  Task<IEnumerable<QiInterval<T>>> GetIntervalsAsync<T, T1, T2>(string streamId, 
-      Tuple<T1, T2> startIndex, Tuple<T1, T2> endIndex, int count, 
-      string viewId = null);
+  Task<IEnumerable<IList<T>>> GetJoinValuesAsync<T>(SdsJoinType joinMode, IList<SdsStreamQuery> 
+      sdsStreamsQueryOptions);
 
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T>(string streamId, 
-      string startIndex, string endIndex, int count, string filter, 
-      string viewId = null);
+  Task<IList<T>> GetMergeValuesAsync<T>(SdsMergeType joinMode, IList<SdsStreamQuery> 
+      sdsStreamsQueryOptions);
         
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T, T1>(string streamId, 
-      T1 startIndex, T1 endIndex, int count, string filter, 
-      string viewId = null);
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, string endIndex);
         
-  Task<IEnumerable<QiInterval<T>>> GetIntervalsAsync<T, T1>(string streamId, T1 
-      startIndex, T1 endIndex, int count, string viewId = null);
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, string endIndex, int count);
         
-  Task<IEnumerable<QiInterval<T>>> GetIntervalsAsync<T, T1, T2>(string streamId, 
-      Tuple<T1, T2> startIndex, Tuple<T1, T2> endIndex, int count, 
-      string viewId = null);
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, string endIndex, SdsBoundaryType boundaryType, string filter);
 
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T>(string streamId, 
-      string startIndex, string endIndex, int count, string filter, 
-      string viewId = null);
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, string endIndex, SdsBoundaryType boundaryType, string filter, int count);
         
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T, T1>(string streamId, 
-      T1 startIndex, T1 endIndex, int count, string filter, 
-      string viewId = null);
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, SdsBoundaryType startBoundaryType, string endIndex, 
+      SdsBoundaryType endBoundaryType, string filter);
         
-  Task<IEnumerable<QiInterval<T>>> GetIntervalsAsync<T, T1>(string streamId, T1 
-      startIndex, T1 endIndex, int count, string viewId = null);
+  Task<IList<T>> GetMergeValuesAsync<T>(IEnumerable<string> streams, SdsMergeType joinMode, 
+      string startIndex, SdsBoundaryType startBoundaryType, string endIndex, 
+      SdsBoundaryType endBoundaryType, string filter, int count);
         
-  Task<IEnumerable<QiInterval<T>>> GetIntervalsAsync<T, T1, T2>(string streamId, 
-      Tuple<T1, T2> startIndex, Tuple<T1, T2> endIndex, int count, 
-      string viewId = null);
 
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T>(string streamId, 
-      string startIndex, string endIndex, int count, string filter, 
-      string viewId = null);
-        
-  Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T, T1>(string streamId, 
-      T1 startIndex, T1 endIndex, int count, string filter, 
-      string viewId = null);
         
   Task<IEnumerable<QiInterval<T>>> GetFilteredIntervalsAsync<T, T1, T2>(string 
       streamId, Tuple<T1, T2> startIndex, Tuple<T1, T2> endIndex, int count, 
