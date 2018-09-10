@@ -1253,7 +1253,7 @@ This is similar to OuterJoin, but value at each index is the first available val
   
 
   [  
-      {  
+    {
         "Time": "2017-11-23T11:00:00Z",
         "Measurement": 10
     },
@@ -1280,12 +1280,96 @@ This is similar to OuterJoin, but value at each index is the first available val
     {
         "Time": "2017-11-23T17:00:00Z",
         "Measurement": 80
+    }
+  ] 
+
+This is similar to OuterJoin, but value at each index is the first available value at that index when iterating the given list of streams from right to left.
+
+
+**POST Requests**
+For POST requests, the response formats are similar to GET requests, but the request format is different. Except the joinMode, all other options are specified in the body.
+
+
+
+**Request body**
+
+
+::
+  
+  
+
+  [  
+      {  
+		"StreamId": "Simple1",
+		"Options": {
+			"StartIndex": "2017-11-23T11:00:00Z",
+			"EndIndex": "2017-11-23T14:00:00Z",
+			"StartBoundaryType": "Exact",
+			"EndBoundaryType": "Exact",
+			"Count": 100,
+			"Filter": ""
+		}
+	},
+	{
+		"StreamId": "Simple2",
+		"Options": {
+			"StartIndex": "2017-11-23T15:00:00Z",
+			"EndIndex": "2017-11-23T17:00:00Z",
+			"StartBoundaryType": "Exact",
+			"EndBoundaryType": "Exact",
+			"Count": 100,
+			"Filter": ""
+		}
       }
   ] 
 
 
+**Response body**
 
-This is similar to OuterJoin, but value at each index is the first available value at that index when iterating the given list of streams from right to left.
+
+::
+  
+  
+
+  [  
+    [
+        {
+            "Time": "2017-11-23T11:00:00Z",
+            "Measurement": 10
+        },
+        null
+    ],
+    [
+        {
+            "Time": "2017-11-23T13:00:00Z",
+            "Measurement": 20
+        },
+        null
+    ],
+    [
+        {
+            "Time": "2017-11-23T14:00:00Z",
+            "Measurement": 30
+        },
+        null
+    ],
+    [
+        null,
+        {
+            "Time": "2017-11-23T15:00:00Z",
+            "Measurement": 70
+        }
+    ],
+    [
+        null,
+        {
+            "Time": "2017-11-23T17:00:00Z",
+            "Measurement": 80
+        }
+    ]
+  ] 
+
+Notice that not all the values from Streams were included since they are restricted by individual queries for each Stream.
 
 ***********************
 
