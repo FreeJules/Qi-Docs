@@ -1050,6 +1050,38 @@ Measurements from both streams with common indexes.
       GetWindowValues?streams=Simple1,Simple2&joinMode=outer
       &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
 
+
+
+**Parameters**
+
+``string tenantId``
+  The tenant identifier
+``string namespaceId``
+  The namespace identifier
+``string streamId``
+  The stream identifier
+``string startIndex``
+  Index bounding the beginning of the series of events to return
+``string endIndex``
+  Index bounding the end of the series of events to return
+``string count``
+  Optional maximum number of events to return
+``QiBoundaryType boundaryType``
+  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
+``QiBoundaryType startBoundaryType``
+  Optional QiBoundaryType specifies the first value in the result in relation to the start index
+``QiBoundaryType endBoundaryType``
+  Optional QiBoundaryType specifies the last value in the result in relation to the end index
+``string filter``
+  Optional filter expression
+``string viewId``
+  Optional view identifier
+
+
+
+
+
+
 **Response body**
 
 
@@ -1126,6 +1158,37 @@ All Measurements from both Streams, with default values at indexes where a Strea
   GET /api/Tenants/{tenantId}/Namespaces/{namespaceId}/Data/
       GetWindowValues?streams=Simple1,Simple2&joinMode=interpolated
       &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
+
+
+
+**Parameters**
+
+``string tenantId``
+  The tenant identifier
+``string namespaceId``
+  The namespace identifier
+``string streamId``
+  The stream identifier
+``string startIndex``
+  Index bounding the beginning of the series of events to return
+``string endIndex``
+  Index bounding the end of the series of events to return
+``string count``
+  Optional maximum number of events to return
+``QiBoundaryType boundaryType``
+  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
+``QiBoundaryType startBoundaryType``
+  Optional QiBoundaryType specifies the first value in the result in relation to the start index
+``QiBoundaryType endBoundaryType``
+  Optional QiBoundaryType specifies the last value in the result in relation to the end index
+``string filter``
+  Optional filter expression
+``string viewId``
+  Optional view identifier
+
+
+
+
 
 **Response body**
 
@@ -1222,6 +1285,37 @@ All Measurements from both Streams with missing values interpolated. If the miss
       &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
 
 
+
+
+**Parameters**
+
+``string tenantId``
+  The tenant identifier
+``string namespaceId``
+  The namespace identifier
+``string streamId``
+  The stream identifier
+``string startIndex``
+  Index bounding the beginning of the series of events to return
+``string endIndex``
+  Index bounding the end of the series of events to return
+``string count``
+  Optional maximum number of events to return
+``QiBoundaryType boundaryType``
+  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
+``QiBoundaryType startBoundaryType``
+  Optional QiBoundaryType specifies the first value in the result in relation to the start index
+``QiBoundaryType endBoundaryType``
+  Optional QiBoundaryType specifies the last value in the result in relation to the end index
+``string filter``
+  Optional filter expression
+``string viewId``
+  Optional view identifier
+
+
+
+
+
 **Response body**
 
 
@@ -1275,6 +1369,37 @@ This is similar to OuterJoin, but value at each index is the first available val
   GET /api/Tenants/{tenantId}/Namespaces/{namespaceId}/Data/
       GetWindowValues?streams=Simple1,Simple2&joinMode=mergeright
       &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
+
+
+
+
+**Parameters**
+
+``string tenantId``
+  The tenant identifier
+``string namespaceId``
+  The namespace identifier
+``string streamId``
+  The stream identifier
+``string startIndex``
+  Index bounding the beginning of the series of events to return
+``string endIndex``
+  Index bounding the end of the series of events to return
+``string count``
+  Optional maximum number of events to return
+``QiBoundaryType boundaryType``
+  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
+``QiBoundaryType startBoundaryType``
+  Optional QiBoundaryType specifies the first value in the result in relation to the start index
+``QiBoundaryType endBoundaryType``
+  Optional QiBoundaryType specifies the last value in the result in relation to the end index
+``string filter``
+  Optional filter expression
+``string viewId``
+  Optional view identifier
+
+
+
 
 
 
@@ -1356,6 +1481,37 @@ For POST requests, the response formats are similar to GET requests, but the req
 		}
       }
   ] 
+
+
+
+
+**Parameters**
+
+``string tenantId``
+  The tenant identifier
+``string namespaceId``
+  The namespace identifier
+``string streamId``
+  The stream identifier
+``string startIndex``
+  Index bounding the beginning of the series of events to return
+``string endIndex``
+  Index bounding the end of the series of events to return
+``string count``
+  Optional maximum number of events to return
+``QiBoundaryType boundaryType``
+  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
+``QiBoundaryType startBoundaryType``
+  Optional QiBoundaryType specifies the first value in the result in relation to the start index
+``QiBoundaryType endBoundaryType``
+  Optional QiBoundaryType specifies the last value in the result in relation to the end index
+``string filter``
+  Optional filter expression
+``string viewId``
+  Optional view identifier
+
+
+
 
 
 **Response body**
