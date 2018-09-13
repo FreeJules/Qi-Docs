@@ -1449,8 +1449,7 @@ For POST requests, the response formats are similar to GET requests, but the req
   The namespace identifier
 ``string streamId``
   The stream identifier
-``joinMode``
-  Type of join, i.e. inner, outer, etc.
+
 
 
 
