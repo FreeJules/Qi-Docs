@@ -1013,6 +1013,12 @@ The following are responses for various Joins request options:
 
 
 
+**Response**
+
+  The response includes a status code and a response body containing multiple serialized events.
+
+
+
 
 **Response body**
 
