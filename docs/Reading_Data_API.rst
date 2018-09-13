@@ -1086,6 +1086,12 @@ Measurements from both streams with common indexes.
 
 
 
+**Response**
+
+  The response includes a status code and a response body containing multiple serialized events.
+
+
+
 
 
 **Response body**
@@ -1191,6 +1197,12 @@ All Measurements from both Streams, with default values at indexes where a Strea
   Optional filter expression
 ``string viewId``
   Optional view identifier
+
+
+
+**Response**
+
+  The response includes a status code and a response body containing multiple serialized events.
 
 
 
@@ -1320,6 +1332,12 @@ All Measurements from both Streams with missing values interpolated. If the miss
 
 
 
+**Response**
+
+  The response includes a status code and a response body containing multiple serialized events.
+
+
+
 
 
 **Response body**
@@ -1403,6 +1421,12 @@ This is similar to OuterJoin, but value at each index is the first available val
   Optional filter expression
 ``string viewId``
   Optional view identifier
+
+
+
+**Response**
+
+  The response includes a status code and a response body containing multiple serialized events.
 
 
 
@@ -1515,6 +1539,12 @@ For POST requests, the response formats are similar to GET requests, but the req
   Optional filter expression
 ``string viewId``
   Optional view identifier
+
+
+
+**Response**
+
+  The response includes a status code and a response body containing multiple serialized events.
 
 
 
