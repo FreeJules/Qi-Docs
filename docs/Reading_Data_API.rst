@@ -993,22 +993,9 @@ The following are responses for various Joins request options:
   The namespace identifier
 ``string streamId``
   The stream identifier
-``string startIndex``
-  Index bounding the beginning of the series of events to return
-``string endIndex``
-  Index bounding the end of the series of events to return
-``string count``
-  Optional maximum number of events to return
-``QiBoundaryType boundaryType``
-  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
-``QiBoundaryType startBoundaryType``
-  Optional QiBoundaryType specifies the first value in the result in relation to the start index
-``QiBoundaryType endBoundaryType``
-  Optional QiBoundaryType specifies the last value in the result in relation to the end index
-``string filter``
-  Optional filter expression
-``string viewId``
-  Optional view identifier
+``joinMode``
+  Type of join, i.e. inner, outer, etc.
+
 
 
 
@@ -1066,23 +1053,8 @@ Measurements from both streams with common indexes.
   The namespace identifier
 ``string streamId``
   The stream identifier
-``string startIndex``
-  Index bounding the beginning of the series of events to return
-``string endIndex``
-  Index bounding the end of the series of events to return
-``string count``
-  Optional maximum number of events to return
-``QiBoundaryType boundaryType``
-  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
-``QiBoundaryType startBoundaryType``
-  Optional QiBoundaryType specifies the first value in the result in relation to the start index
-``QiBoundaryType endBoundaryType``
-  Optional QiBoundaryType specifies the last value in the result in relation to the end index
-``string filter``
-  Optional filter expression
-``string viewId``
-  Optional view identifier
-
+``joinMode``
+  Type of join, i.e. inner, outer, etc.
 
 
 
@@ -1181,22 +1153,8 @@ All Measurements from both Streams, with default values at indexes where a Strea
   The namespace identifier
 ``string streamId``
   The stream identifier
-``string startIndex``
-  Index bounding the beginning of the series of events to return
-``string endIndex``
-  Index bounding the end of the series of events to return
-``string count``
-  Optional maximum number of events to return
-``QiBoundaryType boundaryType``
-  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
-``QiBoundaryType startBoundaryType``
-  Optional QiBoundaryType specifies the first value in the result in relation to the start index
-``QiBoundaryType endBoundaryType``
-  Optional QiBoundaryType specifies the last value in the result in relation to the end index
-``string filter``
-  Optional filter expression
-``string viewId``
-  Optional view identifier
+``joinMode``
+  Type of join, i.e. inner, outer, etc.
 
 
 
@@ -1304,7 +1262,6 @@ All Measurements from both Streams with missing values interpolated. If the miss
 
 
 
-
 **Parameters**
 
 ``string tenantId``
@@ -1313,22 +1270,8 @@ All Measurements from both Streams with missing values interpolated. If the miss
   The namespace identifier
 ``string streamId``
   The stream identifier
-``string startIndex``
-  Index bounding the beginning of the series of events to return
-``string endIndex``
-  Index bounding the end of the series of events to return
-``string count``
-  Optional maximum number of events to return
-``QiBoundaryType boundaryType``
-  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
-``QiBoundaryType startBoundaryType``
-  Optional QiBoundaryType specifies the first value in the result in relation to the start index
-``QiBoundaryType endBoundaryType``
-  Optional QiBoundaryType specifies the last value in the result in relation to the end index
-``string filter``
-  Optional filter expression
-``string viewId``
-  Optional view identifier
+``joinMode``
+  Type of join, i.e. inner, outer, etc.
 
 
 
@@ -1395,8 +1338,6 @@ This is similar to OuterJoin, but value at each index is the first available val
       &startIndex=0001-01-01T00:00:00.0000000&endIndex=9999-12-31T23:59:59.9999999
 
 
-
-
 **Parameters**
 
 ``string tenantId``
@@ -1405,23 +1346,8 @@ This is similar to OuterJoin, but value at each index is the first available val
   The namespace identifier
 ``string streamId``
   The stream identifier
-``string startIndex``
-  Index bounding the beginning of the series of events to return
-``string endIndex``
-  Index bounding the end of the series of events to return
-``string count``
-  Optional maximum number of events to return
-``QiBoundaryType boundaryType``
-  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
-``QiBoundaryType startBoundaryType``
-  Optional QiBoundaryType specifies the first value in the result in relation to the start index
-``QiBoundaryType endBoundaryType``
-  Optional QiBoundaryType specifies the last value in the result in relation to the end index
-``string filter``
-  Optional filter expression
-``string viewId``
-  Optional view identifier
-
+``joinMode``
+  Type of join, i.e. inner, outer, etc.
 
 
 **Response**
@@ -1523,22 +1449,9 @@ For POST requests, the response formats are similar to GET requests, but the req
   The namespace identifier
 ``string streamId``
   The stream identifier
-``string startIndex``
-  Index bounding the beginning of the series of events to return
-``string endIndex``
-  Index bounding the end of the series of events to return
-``string count``
-  Optional maximum number of events to return
-``QiBoundaryType boundaryType``
-  Optional QiBoundaryType specifies handling of events at or near the start and end indexes
-``QiBoundaryType startBoundaryType``
-  Optional QiBoundaryType specifies the first value in the result in relation to the start index
-``QiBoundaryType endBoundaryType``
-  Optional QiBoundaryType specifies the last value in the result in relation to the end index
-``string filter``
-  Optional filter expression
-``string viewId``
-  Optional view identifier
+``joinMode``
+  Type of join, i.e. inner, outer, etc.
+
 
 
 
