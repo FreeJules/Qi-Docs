@@ -1015,18 +1015,14 @@ The following are responses for various Joins request options:
 
   [  
     [
-      {  
-        "Time":"2017-11-23T14:00:00Z",
-        "Measurement":10.0
-     },
-     {  
-        "Time":"2017-11-23T14:00:00Z",
-        "Measurement":60.0
-     },
-     {  
-        "Time":"2017-11-23T15:00:00Z",
-        "Measurement":30.0
-      }
+        {
+            "Time": "2017-11-23T14:00:00Z",
+            "Measurement": 30
+        },
+        {
+            "Time": "2017-11-23T14:00:00Z",
+            "Measurement": 60
+        }
     ]
   ] 
 
