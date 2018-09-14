@@ -921,7 +921,7 @@ Adding a filter to the request means only events that meet the filter criteria a
 ``Get Data Joins Values``
 --------------------
 
-Get Data Joins Values returns multiiple data streams specified in your API call. 
+Get Data Joins Values returns multiple data streams specified in your API call. 
 
 To join multiple streams, for example Simple1 and Simple2, assume that Simple 1 presents the following data:
 
