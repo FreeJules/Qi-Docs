@@ -526,7 +526,7 @@ Returns the view corresponding to the specified viewId within a given namespace.
 
 ::
 
-    GET api/Tenants/{tenantId}/Namespaces/{namespaceId}/Views/{viewId}
+    GET api/Tenants/{tenantId}/Namespaces/{namespaceId}/StreamViews/{viewId}
 
 
 **Parameters**
@@ -602,7 +602,7 @@ Returns the view map corresponding to the specified viewId within a given namesp
 
 ::
 
-    GET api/Tenants/{tenantId}/Namespaces/{namespaceId}/Views/{viewId}/Map
+    GET api/Tenants/{tenantId}/Namespaces/{namespaceId}/StreamViews/{viewId}/Map
 
 
 **Parameters**
@@ -681,7 +681,7 @@ Returns a list of views within a given namespace.
 
 ::
 
-    GET api/Tenants/{tenantId}/Namespaces/{namespaceId}/Views?skip={skip}&count={count}
+    GET api/Tenants/{tenantId}/Namespaces/{namespaceId}/StreamViews?skip={skip}&count={count}
 
 
 **Parameters**
@@ -733,7 +733,7 @@ If no matching identifier is found, the specified view is created.
 
 ::
 
-    POST api/Tenants/{tenantId}/Namespaces/{namespaceId}/Views/{viewId}
+    POST api/Tenants/{tenantId}/Namespaces/{namespaceId}/StreamViews/{viewId}
 
 
 **Parameters**
@@ -780,7 +780,7 @@ Creates or updates the definition of a view.
 
 ::
 
-    PUT api/Tenants/{tenantId}/Namespaces/{namespaceId}/Views/{viewId}
+    PUT api/Tenants/{tenantId}/Namespaces/{namespaceId}/StreamViews/{viewId}
 
 
 **Parameters**
@@ -828,7 +828,7 @@ Deletes a view from the specified tenant and namespace.
 
 ::
 
-    GET	api/Tenants/{tenantId}/Namespaces/{namespaceId}/Views/{viewId}
+    GET	api/Tenants/{tenantId}/Namespaces/{namespaceId}/StreamViews/{viewId}
 
 
 **Parameters**
